@@ -7,14 +7,14 @@ Este proyecto consiste en una aplicación web de extremo a extremo que permite p
 - Transformar los datos en información accionable, permitiendo priorizar clientes en riesgo y comprender las causas principales de su posible abandono.
 - Proporcionar un ejemplo práctico de integración end-to-end en ciencia de datos, desde la ingesta y procesamiento de información hasta la visualización para usuarios no técnicos.
 ## Plan inicial de trabajo
-**Fase 1: Preparación de datos y entrenamiento de modelos**  
+- **Fase 1: Preparación de datos y entrenamiento de modelos**  
 Revisión del dataset y generación de modelos.  
 
-**Fase 2: Desarrollo del backend**  
+- **Fase 2: Desarrollo del backend**  
 Implementación de API en FastAPI para predicciones y explicaciones.  
 
-**Fase 3: Desarrollo del frontend**  
+- **Fase 3: Desarrollo del frontend**  
 Creación de un panel de control con métricas y visualización por cliente.  
 
-**Fase 4: Integración y despliegue**  
+- **Fase 4: Integración y despliegue**  
 Conexión frontend-backend, pruebas finales y documentación.  
