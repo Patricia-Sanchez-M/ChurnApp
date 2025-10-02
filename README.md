@@ -7,7 +7,12 @@ Este proyecto consiste en una aplicación web de extremo a extremo que permite p
 - Transformar los datos en información accionable, permitiendo priorizar clientes en riesgo y comprender las causas principales de su posible abandono.
 - Proporcionar un ejemplo práctico de integración end-to-end en ciencia de datos, desde la ingesta y procesamiento de información hasta la visualización para usuarios no técnicos.
 ## Plan inicial de trabajo
-1️⃣**Preparación de datos y entrenamiento de modelos**: Revisión del dataset y generación de modelos.  
-2️⃣**Desarrollo del backend**: Implementación de API en FastAPI para predicciones y explicaciones.  
-3️⃣**Desarrollo del frontend**: Creación de un panel de control con métricas y visualización por cliente.  
+1️⃣**Preparación de datos y entrenamiento de modelos**: Revisión del dataset y generación de modelos. Modelos planteados:
+- *Supervisados*: árbol de decisión (interpretable), Random Forest, Gradient Boosting, Neural Net (blackbox).
+- *No supervisados*: clustering K-means.
+  
+2️⃣**Desarrollo del backend**: Implementación de API en FastAPI para ETL y predicciones.  
+
+3️⃣**Desarrollo del frontend**: Creación de un panel de control con métricas y visualización por cliente/segmento. 
+
 4️⃣**Integración y despliegue**: Conexión frontend-backend, pruebas finales y documentación.  
