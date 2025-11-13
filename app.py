@@ -43,5 +43,8 @@ app.layout = dbc.Container([
 ], fluid=True)
 
 
+#if __name__ == "__main__":
+#    app.run_server(debug=True)  # 🔥 modo auto-reload activado
+
 if __name__ == "__main__":
-    app.run_server(debug=True)  # 🔥 modo auto-reload activado
+    app.run(host="0.0.0.0", port=8050, debug=True)
