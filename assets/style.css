@@ -1,0 +1,162 @@
+/* ===== General Background (claro con toque suave y animado) ===== */
+body {
+  background: linear-gradient(120deg, #f9f9fb, #eaf2ff, #e6e9ef, #f2f6ff);
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease-in-out infinite;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  transition: background 1s ease-in-out;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 16px rgba(0, 150, 255, 0.25);
+}
+
+/* ===== Title (gris con brillo azul) ===== */
+body h1,
+.container h1,
+.container-fluid h1 {
+  font-size: 3rem;
+  color: #222 !important;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+body h1:hover,
+.container h1:hover,
+.container-fluid h1:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
+}
+
+/* ===== Floating rocket animation ===== */
+.home-container h1::after {
+  content: "🚀 🚀 🚀 🚀";
+  display: inline-block;
+  margin-left: 12px;
+  animation: float 2.5s ease-in-out infinite;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Movimiento flotante continuo */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Efecto hover: cohetes giran y brillan */
+.home-container h1:hover::after {
+  transform: translateY(-8px) rotate(20deg) scale(1.2);
+  filter: drop-shadow(0 0 6px rgba(0, 123, 255, 0.5));
+}
+
+/* ===== Subtitle text ===== */
+.lead {
+  font-size: 1.1rem;
+  color: #555;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.lead:hover {
+  color: #222;
+}
+
+/* ===== Get Started Button (centrado y corto) ===== */
+.btn-primary {
+  display: inline-block !important;
+  width: fit-content !important;
+  min-width: 150px;
+  padding: 8px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #007bff, #00bfff);
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #00bfff, #007bff);
+  box-shadow: 0 0 16px rgba(0, 191, 255, 0.6);
+}
+
+/* Centrado absoluto del botón */
+.d-block.mx-auto {
+  display: flex !important;
+  justify-content: center;
+}
+
+/* ===== Page fade-in animation ===== */
+._dash-loading {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Animación de entrada suave (para todo el home) ===== */
+.home-container {
+  animation: fadeSlideIn 1.2s ease-in-out both;
+}
+
+.home-container h1 {
+  animation: fadeSlideIn 1.4s ease-in-out both;
+}
+
+.home-container .lead {
+  animation: fadeSlideIn 1.8s ease-in-out both;
+}
+
+.home-container .btn-primary {
+  animation: fadeSlideIn 2.2s ease-in-out both;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
