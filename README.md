@@ -108,11 +108,15 @@ pip install -r requirements.txt
 python app.py
 ```
 
+---
+
 ### 🐳 Running with Docker
 ```bash
 docker build -t churnapp .
 docker run -p 8050:8050 churnapp
 ```
+
+---
 
 ### 📁 Project Structure
 ```bash
@@ -131,8 +135,9 @@ ChurnApp/
 │── Telco-Customer-Churn.csv
 ```
 
-### 
-🌐 Live Demo
+---
+
+### 🌐 Live Demo
 ```bash
 🚀 https://churnapp-1.onrender.com
 ```
