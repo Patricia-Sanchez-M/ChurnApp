@@ -154,5 +154,6 @@ ChurnApp/
 ---
 
 ### 🌐 Live Demo
-[ChurnApp 🚀] (https://churnapp-4ik3.onrender.com/predict)
-_(cold starts may take 30–50 seconds)_
+
+**[ChurnApp 🚀](https://churnapp-4ik3.onrender.com/predict)**  
+*Cold starts may take 30–50 seconds.*
