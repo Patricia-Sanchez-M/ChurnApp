@@ -39,7 +39,7 @@ For each model, the app displays:
 #### 🧠 Model training
 
 All models are **binary classifiers** that predict whether a customer will **churn (`Yes`) or not churn (`No`)**.  
-Training is done **offline** in the Jupyter notebooks included in this repo:
+Training is done **offline** in the Jupyter notebooks included in this repo: **[ChurnApp_Models](https://github.com/Patricia-Sanchez-M/ChurnApp_Models)**
 
 - `churn_EDA.ipynb` – Loads the Telco Customer Churn dataset, cleans basic issues
   (`TotalCharges` as numeric, `Churn` mapped to 0/1) and explores the main patterns
