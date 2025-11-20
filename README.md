@@ -122,7 +122,7 @@ The Dash app **does not re-train** models in production. It simply:
 
 ### 🧮 **4. Custom Prediction Form**
 
-Users can enter their own customer profile to generate predictions:
+Users can enter customer profiles to generate predictions:
 
 - Demographics 👤
 - Contract information 💼
